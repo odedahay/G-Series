@@ -33,8 +33,8 @@ keywords = "ASUS, ROG, G-Series, G Series, ASUS ROG, ASUS G Series, ASUS G-Serie
     <title><% response.Write(title) %></title>
     <link href="//fonts.googleapis.com" rel="dns-prefetch">
     <link href="//ajax.googleapis.com" rel="dns-prefetch">
-    <link href="/us/site/assets/css/asus-framework.0.7.6.css" rel="stylesheet">
-    <link href="/us/site/g-series/assets/css/main.min.css?ver=1.0.5" rel="stylesheet">
+    <link href="/us/site/assets/css/asus-framework.0.9.2.css" rel="stylesheet">
+    <link href="/us/site/g-series/assets/css/main.min.css?ver=1.1.0" rel="stylesheet">
   </head>
 
   <body>

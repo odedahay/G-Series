@@ -1,9 +1,4 @@
-<!-- #include file="../header.asp" -->
-
-<%
-dim wtb
-wtb = true
-%>
+<!-- #include virtual="/us/site/g-series/header.asp" -->
 
     <div class="container">
 
@@ -93,11 +88,18 @@ wtb = true
                   <li><strong>US:</strong></li>
                   <li><a href="http://www.amazon.com/dp/B00IAACWH6" class="external">Amazon</a></li>
                   <li><a href="http://www.bhphotovideo.com/c/search?ntt=asus+g750+jz&refineSearchString=&ci=6782&N=4110474287" class="external">B&amp;H</a></li>
-                  <li><a href="http://www.gentechpc.com/search.asp?sp=G750Jz" target="_blank" class="external">Gentech PC</a></li>
+                  <li><a href="http://www.gentechpc.com/search.asp?sp=G750Jz" class="external">Gentech PC</a></li>
                   <li><a href="http://www.mobileadvance.com/dp/B00IAACWH6" class="external">Mobile Advance</a></li>
                   <li><a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16834231633" class="external">Newegg</a></li>
                   <li><a href="http://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=8925426" class="external">Tiger Direct</a></li>
                   <li><a href="http://www.xoticpc.com/asus-g750jzds71-p-6979.html" class="external">XOTICPC</a></li>
+                </ul>
+
+                <ul class="list-inline">
+                  <li><strong>Canada:</strong></li>
+                  <li><a href="http://www.canadacomputers.com/product_info.php?cPath=710_577_371&item_id=069530" class="external">Canada Computers</a></li>
+                  <li><a href="http://www.memoryexpress.com/Products/MX51841" class="external">Memory Express</a></li>
+                  <li><a href="http://www.ncix.com/detail/asus-g750jz-db73-ca-core-i7-4700hq-24gb-56-96245-1308.htm" class="external">NCIX</a></li>
                 </ul>
 
               </div><!-- .columns.medium-9.last -->
@@ -149,6 +151,13 @@ wtb = true
                   <li><a href="http://www.xoticpc.com/asus-g750jsds71-p-6978.html" class="external">XOTICPC</a></li>
                 </ul>
 
+                <ul class="list-inline">
+                  <li><strong>Canada:</strong></li>
+                  <li><a href="http://www.canadacomputers.com/product_info.php?cPath=710_577_371&item_id=069529" class="external">Canada Computers</a></li>
+                  <li><a href="http://www.memoryexpress.com/Products/MX51916" class="external">Memory Express</a></li>
+                  <li><a href="http://www.ncix.com/detail/asus-rog-g750js-db72-intel-i7-4700hq-ae-97528.htm" class="external">NCIX</a></li>
+                </ul>
+
               </div><!-- .columns.medium-9.last -->
 
             </div><!-- .row.wtb-box -->
@@ -198,6 +207,13 @@ wtb = true
                   <li><a href="http://www.xoticpc.com/asus-g750jmds71-p-6968.html" class="external">XOTICPC</a></li>
                 </ul>
 
+                <ul class="list-inline">
+                  <li><strong>Canada:</strong></li>
+                  <li><a href="http://www.canadacomputers.com/product_info.php?cPath=710_577_1199&item_id=069528" class="external">Canada Computers</a></li>
+                  <li><a href="http://www.memoryexpress.com/Products/MX51637" class="external">Memory Express</a></li>
+                  <li><a href="http://www.ncix.com/detail/asus-rog-g750jm-db71-core-i7-4700hq-01-97117.htm" class="external">NCIX</a></li>
+                </ul>
+
               </div><!-- .columns.medium-9.last -->
 
             </div><!-- .row.wtb-box -->
@@ -211,6 +227,6 @@ wtb = true
     </div><!-- .container -->
     
     
-<!-- #include file="../menu.asp" -->
+<!-- #include virtual="/us/site/g-series/menu.asp" -->
 
-<!-- #include file="../footer.asp" -->
+<!-- #include virtual="/us/site/g-series/footer.asp" -->

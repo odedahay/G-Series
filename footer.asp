@@ -19,7 +19,8 @@
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="/us/site/assets/js/asus-framework.0.7.6.js"></script>
+    <script src="/us/site/assets/js/asus-framework.0.9.2.js"></script>
+
     <script type="text/javascript">
       createAnalytics('UA-46820307-6');
     </script>
