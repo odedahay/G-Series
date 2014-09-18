@@ -6,12 +6,23 @@
   "functions",
   "mixins";
 
-$rog-red: #d01616 !default;
+$subnav-button-width: 78px !default;
+$subnav-button-height: 48px !default;
+
+$tc-nav-gaming-width: 60px !default;
+$tc-nav-gaming-height: 45px !default;
+
+$social-button-width: 41px !default;
+$social-button-height: 32px !default;
+
+$rog-red: #940c0c !default;
 
 $white:  #fff !default;
 $silver: #ddd !default;
 $gray:   #aaa !default;
-$black:  #111 !default;  
+$black:  #111 !default; 
+
+$silver: #e5e5e5; 
 
 // *** Media Query Ranges ***
 
@@ -20,6 +31,8 @@ $medium-range: (40.063em, 64em) !default;
 $large-range: (64.063em, 90em) !default;
 $xlarge-range: (90.063em, 120em) !default;
 $xxlarge-range: (120.063em, 99999999em) !default;
+
+$subnav-range: (40.063em, 75em) !default;
 
 $screen: "only screen" !default;
 
@@ -41,6 +54,7 @@ $xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max
 $xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})" !default;
 $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})" !default;
 
+$subnav-dots-only: "#{$screen} and (min-width:#{lower-bound($subnav-range)}) and (max-width:#{upper-bound($subnav-range)})" !default;
 
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -49,6 +63,14 @@ body {
   > .container {
     padding-top: rem-calc(50);
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $white;
 }
 
 .container {
@@ -61,7 +83,7 @@ nav {
   left: 0;
   z-index: 10;
   width: 100%;
-  border-bottom: 1px solid $silver;
+  border-bottom: 1px solid $gray;
   > .container {
     height: rem-calc(50);
   }
@@ -75,7 +97,7 @@ nav {
     padding: 2px 5px;
     border: 1px solid $silver;
     border-radius: 3px;
-    color: $silver;
+    color: $white !important;
     text-decoration: none;
     transition: border-color .3s ease-in-out;
     &:hover {
@@ -84,25 +106,73 @@ nav {
   }
 }
 
+.dropdown-menu {
+  position:absolute;
+  top: rem-calc(51);
+  right: 0;
+  width: rem-calc(300);
+  height: rem-calc(330);
+  background: url('../img/dropdown-menu-bg.jpg') center center no-repeat #272727;
+  background-size: 80%;
+  @media #{$small-only} {
+    width: 100%;
+    background-size: 100%;
+  }
+  .dropdown-list {
+    margin: 0;
+    height: rem-calc(330);
+  }
+  .dropdown-item {
+    display: block;
+    height: 20%;
+    line-height: 66px;
+    border-top: 1px solid darken($gray, 35%);
+    border-bottom: 1px solid darken($gray, 65%);
+    > a {
+      display: block;
+      padding-left: rem-calc(30);
+      color: $white !important;
+      text-decoration: none;
+      text-transform: uppercase;
+      &:hover {
+        color: $rog-red !important;
+        background-color: rgba(4,4,4,0.5);
+      }
+      > .arrow {
+        font-size: 130%;
+        padding-right: rem-calc(10);
+      }
+    }
+  }
+}
+
+footer {
+  > p {
+    font-size: 70%;
+    color: $gray;
+    text-align: center;
+  }
+}
+
 .subnav {
   position: absolute;
   right: rem-calc(20);
   z-index: 10;
   .subnav-button {
-    height: 48px;
-    width: 78px;
+    height: $subnav-button-height;
+    width: $subnav-button-width;
     background: url('../img/fp-nav-bg-sprite.jpg') 0 0 no-repeat;
     &.power {
-      background-position: -78px 0;
+      background-position: -$subnav-button-width 0;
     }
     &.cooling {
-      background-position: floor(-78px * 2) 0;
+      background-position: (-$subnav-button-width * 2) 0;
     }
-    &.graphics {
-      background-position: floor(-78px * 3) 0;
+    &.gaming {
+      background-position: (-$subnav-button-width * 3) 0;
     }
     &.series {
-      background-position: floor(-78px * 4) 0;
+      background-position: (-$subnav-button-width * 4) 0;
     }
     > .fp-nav {
       position: relative;
@@ -124,6 +194,16 @@ nav {
       }
     }
   }
+  @media only screen and (max-width: 85em) {
+    .subnav-button {
+      width: 12px;
+      margin-bottom: rem-calc(10);
+      background-image: none;
+    }
+  }
+  @media only screen and (max-width: 75em) {
+    display: none !important;
+  }
 }
 
 #home {
@@ -143,25 +223,32 @@ nav {
   .featured-supporting {
     margin: rem-calc(40) auto;
     max-width: 60%;
+    text-transform: uppercase;
+    font-weight: 400;
     @media #{$small-only} {
       margin-top: rem-calc(20);
       margin-bottom: rem-calc(20);
-      max-width: 95%;
     }
+  }
+  .button {
+    margin-bottom: rem-calc(30);
   }
 }
 
 #power {
-  .kv {
+  .kv-container {
     position: relative;
     text-align: right;
     .nvidia-badge {
       position: absolute;
       bottom: 0;
-      right: 0;
+      right: rem-calc(20);
+      @media #{$medium-only} {
+        right: 0;
+      }
       @media #{$small-only} {
         left: 5%;
-        bottom: 50%;
+        bottom: 30%;
         right: auto;
         max-width: 120px;
       }
@@ -171,53 +258,245 @@ nav {
     position: absolute;
     z-index: 2;
     max-width: 40%;
-    text-align: left;
+    @media #{$medium-only} {
+      max-width: 50%;
+      padding: rem-calc(5);
+      background-color: rgba(1,1,1,0.3);
+    }
     @media #{$small-only} {
       position: relative;
-      max-width: 100%;
-      text-align: center;
     }
+    .turbo-master {
+      margin-top: rem-calc(10);
+      > h4 {
+        text-transform: uppercase;
+      }
+      @media #{$large-up} {
+        margin-top: rem-calc(60);
+      }
+    }
+  }
+  .dedicated-callout {
+    font-style: italic;
+    text-transform: uppercase;
   }
 }
 
 #cooling {
   .featured-supporting {
-    max-width: 80%;
     margin-bottom: rem-calc(40);
     @media #{$small-only} {
-      max-width: 100%;
       margin-bottom: rem-calc(20);
-      text-align: center;
     }
   }
-  .vents-image {
-    @media #{$medium-up} {
-      margin-top: rem-calc(-100);
+  @media #{$medium-up} {
+    .heat-pipes {
+      margin-top: rem-calc(20);
+      margin-bottom: rem-calc(20);
+    }
+  }
+}
+
+#gaming {
+  .tc-nav {
+    display: inline-block;
+    height: $tc-nav-gaming-height;
+    width: $tc-nav-gaming-width;
+    background: url('../img/tc-nav-sprite-gaming.jpg') 0 0 no-repeat;
+    @include text-hide();
+    &.gaming-4k.active {
+      background-position: 0 bottom;
+    }
+    &.gaming-surround {
+      background-position: -$tc-nav-gaming-width 0;
+      &.active {
+        background-position: -$tc-nav-gaming-width bottom;
+      }
+    }
+    &.gaming-headphones {
+      background-position: (-$tc-nav-gaming-width * 2) 0;
+      &.active {
+        background-position: (-$tc-nav-gaming-width * 2) bottom;
+      }
+    }
+    &.gaming-audio {
+      background-position: (-$tc-nav-gaming-width * 3) 0;
+      &.active {
+        background-position: (-$tc-nav-gaming-width * 3) bottom;
+      }
+    }
+    &.gaming-sub {
+      background-position: (-$tc-nav-gaming-width * 4) 0;
+      &.active {
+        background-position: (-$tc-nav-gaming-width * 4) bottom;
+      }
+    }
+    &.gaming-wireless {
+      background-position: (-$tc-nav-gaming-width * 5) 0;
+      &.active {
+        background-position: (-$tc-nav-gaming-width * 5) bottom;
+      }
+    }
+  }
+}
+
+#series {
+  .featured-supporting {
+    text-align: left;
+  }
+  .series-button {
+    margin-top: rem-calc(50);
+    margin-bottom: rem-calc(50);
+  }
+  > h3 {
+    text-transform: uppercase;
+  }
+}
+
+.social {
+  width: rem-calc(270);
+  margin: rem-calc(20) auto;
+  text-align: center;
+  li {
+    padding-bottom: rem-calc(5);
+  }
+  .social-button {
+    display: block;
+    height: $social-button-height;
+    width: $social-button-width;
+    background: url('../img/social-bg.jpg') 0 0 no-repeat;
+    @include text-hide();
+    &.twitter {
+      background-position: -$social-button-width 0;
+    }
+    &.youtube {
+      background-position: (-$social-button-width * 2) 0;
+    }
+    &.instagram {
+      background-position: (-$social-button-width * 3) 0;
+    }
+    &.google-plus {
+      background-position: (-$social-button-width * 4) 0;
     }
   }
 }
 
 .red-box {
   margin-bottom: rem-calc(10);
-  padding: rem-calc(5);
+  padding: rem-calc(5) rem-calc(8);
+  height: 100%;
   border: 1px solid $rog-red;
   background: url('../img/box-bg.jpg') 0 0;
   text-align: left;
-  > h3 {
+  h4 {
     margin-top: 0;
     margin-bottom: 0;
+    text-transform: uppercase;
   }
-  > p {
+  p {
     margin-top: rem-calc(5);
-    margin-left: rem-calc(20);
+    padding-left: rem-calc(25);
+    background: url('../img/bullet-red-box.png') 0 rem-calc(5) no-repeat;
+  }
+  > .row {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
+.wtb-box {
+  padding: rem-calc(5) rem-calc(8);
+  border: 1px solid $rog-red;
+  border-top: none;
+  ul {
+    margin-top: 0.5em;
+  }
+}
+
+.series-box {
+  margin-bottom: rem-calc(10) !important;
+  &.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    @media #{$small-only} {
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+    }
+  }  
+  .series-label {
+    margin-top: 0;
+    margin-right: rem-calc(-16);
+    padding-top: rem-calc(18);
+    padding-bottom: rem-calc(18);
+    background-color: $rog-red;
+    color: $white;
+    text-align: center;
+    @media #{$small-only} {
+      margin-bottom: -1px;
+      margin-left: rem-calc(-7.5);
+      margin-right: rem-calc(-7.5);
+      padding-top: rem-calc(10);
+      padding-bottom: rem-calc(10);
+    }
+  }
+  .red-box {
+    padding-top: rem-calc(18);
+    padding-bottom: rem-calc(18);
+  }
+}
+
+.list-series {
+  padding-left: rem-calc(5);
+  > li {
+    margin-bottom: rem-calc(10);
+    padding-left: rem-calc(25);
+    list-style: none;
+    background: url('../img/bullet-series.jpg') 0 4px no-repeat;
+    &.wtb-links {
+      background-image: none;
+    }
+  }
+}
+
+.screen-size {
+  float: left;
+  border-bottom: 1px solid $rog-red;
+}
+
+.previous-section {
+  display: none !important;
+  @media #{$subnav-dots-only} {
+    display: block !important;
+  }
+}
+
+.next-section,
+.previous-section {
+  margin: rem-calc(30) auto;
+  width: 46px;
+}
 .next-section {
-  position: absolute;
-  bottom: rem-calc(-60);
-  left: 50%;
-  margin-left: -23px;
+  margin-top: rem-calc(15);
+}
+.previous-section {
+  margin-bottom: rem-calc(15);
+}
+
+.kv {
+  max-height: 50%;
+}
+
+.featured-supporting {
+  max-width: 75%;
+  > h1 {
+    text-transform: uppercase;
+  }
+  @media #{$small-only} {
+    max-width: 100% !important;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+    text-align: center !important;
+  }
 }
 
 .fp-content-parent {
@@ -233,8 +512,87 @@ nav {
   }
 }
 
-.featured-supporting {
-  > h1 {
+.tc-content-parent {
+  > h4 {
     text-transform: uppercase;
   }
+  > p {
+    min-height: rem-calc(40);
+    margin-left: 15%;
+    margin-right: 15%;
+    @media #{$small-only} {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  }
 }
+
+.tc-nav-parent {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  padding: rem-calc(8) rem-calc(20);
+  background: $gray;
+  color: darken($gray, 50%) !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  box-shadow: 0 6px darken($gray, 30%);
+  border-top: 1px solid lighten($gray, 10%);
+  border-left: 1px solid lighten($gray, 10%);
+  border-right: 1px solid darken($gray, 10%);
+  &:hover {
+    top: 2px;
+    box-shadow: 0 4px darken($gray, 30%);
+    background: darken($gray, 10%);
+    border-top: 1px solid darken($gray, 5%);
+    border-left: 1px solid darken($gray, 5%);
+    border-right: 1px solid darken($gray, 15%);
+  }
+  &:active {
+    top: 4px;
+    box-shadow: 0 2px darken($gray, 30%);
+    background: darken($gray, 20%);
+    border-top: 1px solid darken($gray, 35%);
+    border-left: 1px solid darken($gray, 35%);
+    border-right: 1px solid darken($gray, 50%);
+  }
+  &.rog {
+    background: $rog-red;
+    color: $white !important;
+    box-shadow: 0 6px darken($rog-red, 30%);
+    border-top: 1px solid lighten($rog-red, 10%);
+    border-left: 1px solid lighten($rog-red, 10%);
+    border-right: 1px solid darken($rog-red, 10%);
+    &:hover {
+      background: darken($rog-red, 10%);
+      box-shadow: 0 4px darken($rog-red, 30%);
+      border-top: 1px solid darken($rog-red, 5%);
+      border-left: 1px solid darken($rog-red, 5%);
+      border-right: 1px solid darken($rog-red, 15%);
+    }
+    &:active {
+      background: darken($rog-red, 20%);
+      box-shadow: 0 2px darken($rog-red, 30%);
+      border-top: 1px solid darken($rog-red, 35%);
+      border-left: 1px solid darken($rog-red, 35%);
+      border-right: 1px solid darken($rog-red, 50%);
+    }
+  }
+}
+
+@media #{$medium-up} {
+  .padding-bottom-medium-up {
+    margin-bottom: 2em;
+  }
+}
+
+a:link    { color: lighten($rog-red, 10%); }
+a:visited { color: darken($rog-red, 10%); }
+a:hover   { color: $rog-red; }
+a:active  { color: darken($rog-red, 20%); }
