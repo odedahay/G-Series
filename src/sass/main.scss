@@ -92,6 +92,9 @@ nav {
     float: left;
     line-height: 1;
     @include vertical-center-block();
+    > .rog {
+      border-left: 1px solid $gray;
+    }
   }
   .menu-button {
     padding: 2px 5px;
@@ -147,9 +150,13 @@ nav {
 }
 
 footer {
+  margin: 0 auto;
+  max-width: rem-calc(800);
   > p {
+    padding-right: rem-calc(10);
+    padding-left: rem-calc(10);
     font-size: 70%;
-    color: $gray;
+    color: darken($gray, 20%);
     text-align: center;
   }
 }
@@ -162,6 +169,7 @@ footer {
     height: $subnav-button-height;
     width: $subnav-button-width;
     background: url('../img/fp-nav-bg-sprite.jpg') 0 0 no-repeat;
+    background-size: 390px 48px;
     &.power {
       background-position: -$subnav-button-width 0;
     }
@@ -243,6 +251,7 @@ footer {
       position: absolute;
       bottom: 0;
       right: rem-calc(20);
+      max-width: 167px;
       @media #{$medium-only} {
         right: 0;
       }
@@ -302,7 +311,8 @@ footer {
     display: inline-block;
     height: $tc-nav-gaming-height;
     width: $tc-nav-gaming-width;
-    background: url('../img/tc-nav-sprite-gaming.jpg') 0 0 no-repeat;
+    background: url('../img/tc-nav-sprite-gaming-2x.jpg') 0 0 no-repeat;
+    background-size: 360px 90px;
     @include text-hide();
     &.gaming-4k.active {
       background-position: 0 bottom;
@@ -364,7 +374,8 @@ footer {
     display: block;
     height: $social-button-height;
     width: $social-button-width;
-    background: url('../img/social-bg.jpg') 0 0 no-repeat;
+    background: url('../img/social-bg-2x.jpg') 0 0 no-repeat;
+    background-size: 205px 32px;
     @include text-hide();
     &.twitter {
       background-position: -$social-button-width 0;
@@ -533,58 +544,7 @@ footer {
   margin-right: auto;
 }
 
-.button {
-  position: relative;
-  display: inline-block;
-  padding: rem-calc(8) rem-calc(20);
-  background: $gray;
-  color: darken($gray, 50%) !important;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  box-shadow: 0 6px darken($gray, 30%);
-  border-top: 1px solid lighten($gray, 10%);
-  border-left: 1px solid lighten($gray, 10%);
-  border-right: 1px solid darken($gray, 10%);
-  &:hover {
-    top: 2px;
-    box-shadow: 0 4px darken($gray, 30%);
-    background: darken($gray, 10%);
-    border-top: 1px solid darken($gray, 5%);
-    border-left: 1px solid darken($gray, 5%);
-    border-right: 1px solid darken($gray, 15%);
-  }
-  &:active {
-    top: 4px;
-    box-shadow: 0 2px darken($gray, 30%);
-    background: darken($gray, 20%);
-    border-top: 1px solid darken($gray, 35%);
-    border-left: 1px solid darken($gray, 35%);
-    border-right: 1px solid darken($gray, 50%);
-  }
-  &.rog {
-    background: $rog-red;
-    color: $white !important;
-    box-shadow: 0 6px darken($rog-red, 30%);
-    border-top: 1px solid lighten($rog-red, 10%);
-    border-left: 1px solid lighten($rog-red, 10%);
-    border-right: 1px solid darken($rog-red, 10%);
-    &:hover {
-      background: darken($rog-red, 10%);
-      box-shadow: 0 4px darken($rog-red, 30%);
-      border-top: 1px solid darken($rog-red, 5%);
-      border-left: 1px solid darken($rog-red, 5%);
-      border-right: 1px solid darken($rog-red, 15%);
-    }
-    &:active {
-      background: darken($rog-red, 20%);
-      box-shadow: 0 2px darken($rog-red, 30%);
-      border-top: 1px solid darken($rog-red, 35%);
-      border-left: 1px solid darken($rog-red, 35%);
-      border-right: 1px solid darken($rog-red, 50%);
-    }
-  }
-}
+@include create-button('button-rog',$rog-red);
 
 @media #{$medium-up} {
   .padding-bottom-medium-up {
@@ -593,6 +553,6 @@ footer {
 }
 
 a:link    { color: lighten($rog-red, 10%); }
-a:visited { color: darken($rog-red, 10%); }
+a:visited { color: darken($rog-red, 5%); }
 a:hover   { color: $rog-red; }
 a:active  { color: darken($rog-red, 20%); }
