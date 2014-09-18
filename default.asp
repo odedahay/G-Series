@@ -1,17 +1,9 @@
-<!doctype html>
-<html>
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>ASUS G-Series ROG Gaming Laptops</title>
-    <link href="//fonts.googleapis.com" rel="dns-prefetch">
-    <link href="//ajax.googleapis.com" rel="dns-prefetch">
-    <link href="/assets/lib/framework/framework.0.6.0.css" rel="stylesheet">
-    <link href="/assets/css/main.min.css" rel="stylesheet">
-  </head>
+<!-- #include file="header.asp" -->
 
-  <body>
+<%
+dim wtb
+wtb = false
+%>
 
     <div class="container">
 
@@ -19,11 +11,20 @@
 
       <section id="home" class="row fp-content-parent">
 
-        <img src="/assets/img/kv-home.jpg" alt="ASUS G750 with Mech" class="kv">
+        <div class="kv-home">
+
+          <img src="/us/site/g-series/assets/img/kv-home-clean.jpg" alt="ASUS G750 with Mech" class="kv">
+
+          <div class="intel">
+            <p>4th gen Intel<sup>&reg;</sup> Core<sup>&trade;</sup> i7 processor</p>
+            <img src="/us/site/g-series/assets/img/badge-intel.png" alt="Intel Logo">
+          </div>
+
+        </div><!-- .kv-home -->
 
         <h1 class="text-hide pid">ASUS G750 Breaking The Barriers</h1>
 
-        <h3 class="featured-supporting">Now with ASUS TurboMaster Overclocking Technology and up to NVIDIA<sup>&reg;</sup> GeForce<sup>&reg;</sup> GTX 880M Dedicated gaming</h3>
+        <h3 class="featured-supporting">Now with ASUS TurboMaster Overclocking Technology and up to NVIDIA<sup>&reg;</sup> GeForce<sup>&reg;</sup> GTX 880M Dedicated Graphics</h3>
 
         <a href="G750" title="Shop for the ASUS G-Series ROG Gaming Laptops" class="button">Buy Now</a>
 
@@ -41,7 +42,7 @@
 
           <div class="turbo-master">
 
-            <img src="/assets/img/badge-turbo-master-2x.png" width="72">
+            <img src="/us/site/g-series/assets/img/badge-turbo-master-2x.png" width="72">
 
             <h4>ASUS TurboMaster GPU Technology</h4>
 
@@ -53,9 +54,9 @@
 
         <div class="kv-container">
 
-          <img src="/assets/img/kv-power.jpg" alt="ASUS G750" class="kv">
+          <img src="/us/site/g-series/assets/img/kv-power.jpg" alt="ASUS G750" class="kv">
 
-          <img src="/assets/img/badge-nvidia-2x.png" alt="NVIDIA Optimus - Great performance and battery life" class="nvidia-badge">
+          <img src="/us/site/g-series/assets/img/badge-nvidia-2x.png" alt="NVIDIA Optimus - Great performance and battery life" class="nvidia-badge">
 
         </div><!-- .kv-container -->
 
@@ -134,7 +135,7 @@
         <div class="row">
 
           <div class="columns medium-6 medium-push-6 text-center">
-            <img src="/assets/img/kv-cooling-fans.jpg" alt="ASUS G750 Dual Fans">
+            <img src="/us/site/g-series/assets/img/kv-cooling-fans.jpg" alt="ASUS G750 Dual Fans">
           </div><!-- .columns.medium-6 -->
 
           <div class="columns medium-6 medium-pull-6">
@@ -147,7 +148,7 @@
 
             </div><!-- .red-box -->
 
-            <div class="text-center hide-for-small-only"><img src="/assets/img/kv-cooling-pipes.jpg" alt="ASUS G750 Copper Heatsink" class="heat-pipes"></div>
+            <div class="text-center hide-for-small-only"><img src="/us/site/g-series/assets/img/kv-cooling-pipes.jpg" alt="ASUS G750 Copper Heatsink" class="heat-pipes"></div>
 
           </div><!-- .columns.medium-6 -->
 
@@ -156,7 +157,7 @@
         <div class="row">
 
           <div class="columns medium-6 medium-push-6 text-center">
-            <img src="/assets/img/kv-cooling-vents.jpg" alt="ASUS G750 Dual Vents">
+            <img src="/us/site/g-series/assets/img/kv-cooling-vents.jpg" alt="ASUS G750 Dual Vents">
           </div><!-- .columns.medium-6 -->
 
           <div class="columns medium-6 medium-pull-6">
@@ -193,7 +194,7 @@
 
           <section id="gaming-4k" class="tc-content-parent">
 
-            <img src="/assets/img/kv-gaming-4k.jpg" class="kv">
+            <img src="/us/site/g-series/assets/img/kv-gaming-4k.jpg" class="kv">
 
             <h4>Future-ready: 4k2k HDMI output</h4>
 
@@ -204,7 +205,7 @@
 
           <section id="gaming-surround" class="tc-content-parent">
 
-            <img src="/assets/img/kv-gaming-surround.jpg" class="kv">
+            <img src="/us/site/g-series/assets/img/kv-gaming-surround.jpg" class="kv">
 
             <h4>Trinity Display Technology</h4>
 
@@ -214,7 +215,7 @@
 
           <section id="gaming-wireless" class="tc-content-parent">
 
-            <img src="/assets/img/kv-gaming-wireless.jpg" class="kv">
+            <img src="/us/site/g-series/assets/img/kv-gaming-wireless.jpg" class="kv">
 
             <h4>Kill Or Be Killed: Killer WLAN Support*</h4>
 
@@ -224,7 +225,7 @@
 
           <section id="gaming-headphones" class="tc-content-parent">
 
-            <img src="/assets/img/kv-gaming-headphones.jpg" class="kv">
+            <img src="/us/site/g-series/assets/img/kv-gaming-headphones.jpg" class="kv">
 
             <h4>Powerful&nbsp;Headphone&nbsp;Amp for Improved&nbsp;Clarity</h4>
 
@@ -234,7 +235,7 @@
 
           <section id="gaming-audio" class="tc-content-parent">
 
-            <img src="/assets/img/kv-gaming-audio.jpg" class="kv">
+            <img src="/us/site/g-series/assets/img/kv-gaming-audio.jpg" class="kv">
 
             <h4>ROG AudioWizard</h4>
 
@@ -244,7 +245,7 @@
 
           <section id="gaming-sub" class="tc-content-parent">
 
-            <img src="/assets/img/kv-gaming-sub.jpg" class="kv">
+            <img src="/us/site/g-series/assets/img/kv-gaming-sub.jpg" class="kv">
 
             <h4>Bass Eye Subwoofer</h4>
 
@@ -273,12 +274,11 @@
 
           <h1>The Choice of Champions</h1>
 
-          <p>The realms of overclocking and performance is dominated by the Republic of Gamers.
-Infused with the ROG DNA, own your opponents with the ultimate gaming notebook. </p>
+          <p>The realms of overclocking and performance are dominated by the Republic of Gamers. Infused with the ROG DNA, own your opponents with the ultimate gaming notebook. </p>
 
         </div><!-- .featured-supporting -->
 
-        <img src="/assets/img/kv-series.jpg" class="kv">
+        <img src="/us/site/g-series/assets/img/kv-series.jpg" class="kv">
 
         <h3>Welcome to the G-Series</h3>
 
@@ -287,60 +287,15 @@ Infused with the ROG DNA, own your opponents with the ultimate gaming notebook. 
       </section><!-- #series -->
 
     </div><!-- .container -->
-
+    
     <div class="previous-section hide-for-small-only">
-      <a href="#previous" class="fp-previous" title="Previous page"><img src="/assets/img/button-arrow-up.jpg" alt="previous Section"></a>
+      <a href="#previous" class="fp-previous" title="Previous page"><img src="/us/site/g-series/assets/img/button-arrow-up.jpg" alt="previous Section"></a>
     </div>
 
     <div class="next-section hide-for-small-only">
-      <a href="#next" class="fp-next" title="Next page"><img src="/assets/img/button-arrow-down.jpg" alt="Next Section"></a>
+      <a href="#next" class="fp-next" title="Next page"><img src="/us/site/g-series/assets/img/button-arrow-down.jpg" alt="Next Section"></a>
     </div>
-
-    <div class="social">
-
-      <ul class="small-block-grid-5">
-        <li><a href="https://www.facebook.com/asus.n.america" class="social-button facebook" title="ASUS US on Facebook">Facebook</a></li>
-        <li><a href="https://twitter.com/asususa" class="social-button twitter" title="ASUS US on Twitter">Twitter</a></li>
-        <li><a href="http://www.youtube.com/user/asusrog" class="social-button youtube" title="ASUS US on Youtube">Youtube</a></li>
-        <li><a href="http://instagram.com/asususa" class="social-button instagram" title="ASUS US on Instagram">Instagram</a></li>
-        <li><a href="https://plus.google.com/+asususa/" class="social-button google-plus" title="ASUS US on Google +">Google +</a></li>
-      </ul>
-
-      <p>Connect with us via our social networks</p>
-
-    </div>
-
-    <nav>
-
-      <div class="container">
-
-        <ul class="list-inline logo">
-          <li><a href="http://www.asus.com/us" title="ASUS USA"><img src="/assets/img/logo-asus-2x.jpg" alt="ASUS ROG" width="120"></a></li>
-          <li class="rog"><a href="http://rog.asus.com/" title="ASUS ROG"><img src="/assets/img/logo-rog-2x.jpg" alt="ASUS ROG" width="77"></a></li>
-        </ul>
-        
-
-        <ul class="pull-right list-inline vertical-center-block">
-
-          <li><span class="hide-for-small-only">ASUS recommends Windows 8</span></li>
-          <li><a href="#" class="menu-button dropdown-menu-button">Menu</a></li>
-
-        </ul>
-
-        <div class="dropdown-menu">
-          <ul class="list-unstyled dropdown-list">
-            <li class="dropdown-item"><a href="#home" title="Home"><span class="arrow">&raquo;</span> Home</a></li>
-            <li class="dropdown-item"><a href="#power" title="Power"><span class="arrow">&raquo;</span> Power</a></li>
-            <li class="dropdown-item"><a href="#cooling" title="Cooling"><span class="arrow">&raquo;</span> Cooling</a></li>
-            <li class="dropdown-item"><a href="#gaming" title="Gaming"><span class="arrow">&raquo;</span> Gaming</a></li>
-            <li class="dropdown-item"><a href="/G750" title="G750 Series"><span class="arrow">&raquo;</span> Where To Buy - G750</a></li>
-          </ul>
-        </div><!-- .dropdown-menu -->
-
-      </div><!-- .container -->
-
-    </nav>
-
+    
     <div class="subnav vertical-center-block">
       <ul class="list-unstyled">
         <li class="subnav-button home"><a href="#home" class="fp-nav" title="Home">Home <span class="bullet"></span></a></li>
@@ -350,20 +305,7 @@ Infused with the ROG DNA, own your opponents with the ultimate gaming notebook. 
         <li class="subnav-button series"><a href="#series" class="fp-nav" title="View Series">G-Series <span class="bullet"></span></a></li>
       </ul>
     </div>
+    
+<!-- #include file="menu.asp" -->
 
-    <footer>
-
-      <p>* Available on select models only</p>
-      <p>** Game performance on 2560 x 1600 resolution display</p>
-
-    </footer>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="/assets/lib/framework/framework.0.6.0.js"></script>
-    <script type="text/javascript">
-      createAnalytics('UA-46820307-6');
-    </script>
-
-  </body>
-
-</html>
+<!-- #include file="footer.asp" -->

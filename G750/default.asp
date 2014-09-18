@@ -1,17 +1,9 @@
-<!doctype html>
-<html>
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>ASUS G-Series ROG Gaming Laptops</title>
-    <link href="//fonts.googleapis.com" rel="dns-prefetch">
-    <link href="//ajax.googleapis.com" rel="dns-prefetch">
-    <link href="/assets/lib/framework/framework.0.6.0.css" rel="stylesheet">
-    <link href="/assets/css/main.min.css" rel="stylesheet">
-  </head>
+<!-- #include file="../header.asp" -->
 
-  <body>
+<%
+dim wtb
+wtb = true
+%>
 
     <div class="container">
 
@@ -21,21 +13,21 @@
 
           <h1>The Choice of Champions</h1>
 
-          <p>The realms of overclocking and performance is dominated by the Republic of Gamers. Infused with the ROG DNA, own your opponents with the ultimate gaming notebook. </p>
+          <p>The realms of overclocking and performance are dominated by the Republic of Gamers. Infused with the ROG DNA, own your opponents with the ultimate gaming notebook. </p>
 
         </div><!-- .featured-supporting -->
 
         <div class="row">
 
           <div class="columns medium-7 medium-push-5 text-center padding-bottom-medium-up">
-            <img src="/assets/img/series/G750/kv-main.jpg" alt="G750" class="kv">
+            <img src="/us/site/g-series/assets/img/series/G750/kv-main.jpg" alt="G750" class="kv">
           </div>
 
           <div class="columns medium-5 medium-pull-7 padding-bottom-medium-up">
 
-            <h2>G750 Series</h2>
+            <h2><a href="/us/site/g-series/" title="G Series Home">&laquo; G Series</a> \ G750 Series</h2>
 
-            <p class="screen-size">17.3" FHD (1920 x 1080) IPS display, Matte</p>
+            <p class="screen-size">17.3" FHD (1920 x 1080) display, Matte</p>
 
             <div class="clearfix"></div>
 
@@ -45,6 +37,22 @@
               <li>Enhanced audio experience with ROG AudioWizard and onboard headphone amplifier</li>
               <li>ASUS TurboMaster GPU overclocking technology delivers 5% performance boost </li>
             </ul><!-- .list-series -->
+            
+            <div class="row">
+
+              <div class="columns small-6">
+
+                <a href="http://www.youtube.com/watch?v=SmIy5cWEGtQ" title="View the G750 Technical Overview" class="video-button overview modal">G750 Overview Video</a>
+
+              </div>
+
+              <div class="columns small-6">
+
+                <a href="https://www.youtube.com/watch?v=TmX-f7aL4VA" title="View the G750 Series Video" class="video-button series modal">G750 Series Video</a>
+
+              </div>
+
+            </div>
 
           </div><!-- .columns.medium-5.medium-pull-7 -->
 
@@ -71,7 +79,7 @@
 
               <div class="columns medium-3 text-center">
 
-                <a href="#" class="button-rog">View Details</a>
+                <a href="http://www.asus.com/us/Notebooks_Ultrabooks/ASUS_ROG_G750JZ/" class="button-rog external">View Details</a>
 
               </div><!-- .columns.medium-3 -->
 
@@ -83,8 +91,13 @@
 
                 <ul class="list-inline">
                   <li><strong>US:</strong></li>
-                  <li><a href="www.amazon.com/B00IAACXMU" target="_blank" class="external">Amazon</a></li>
-                  <li><a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16834231633" target="_blank" class="external">Newegg</a></li>
+                  <li><a href="http://www.amazon.com/dp/B00IAACWH6" class="external">Amazon</a></li>
+                  <li><a href="http://www.bhphotovideo.com/c/search?ntt=asus+g750+jz&refineSearchString=&ci=6782&N=4110474287" class="external">B&amp;H</a></li>
+                  <li><a href="http://www.gentechpc.com/search.asp?sp=G750Jz" target="_blank" class="external">Gentech PC</a></li>
+                  <li><a href="http://www.mobileadvance.com/dp/B00IAACWH6" class="external">Mobile Advance</a></li>
+                  <li><a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16834231633" class="external">Newegg</a></li>
+                  <li><a href="http://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=8925426" class="external">Tiger Direct</a></li>
+                  <li><a href="http://www.xoticpc.com/asus-g750jzds71-p-6979.html" class="external">XOTICPC</a></li>
                 </ul>
 
               </div><!-- .columns.medium-9.last -->
@@ -108,14 +121,14 @@
               <div class="columns medium-9">
 
                 <ul class="list-series">
-                  <li>NVIDIA<sup>&reg;</sup> GeForce<sup>&reg;</sup> GTX 870M 4GB with Optimus Technology</li>
+                  <li>NVIDIA<sup>&reg;</sup> GeForce<sup>&reg;</sup> GTX 870M 3GB with Optimus Technology</li>
                 </ul><!-- .list-series -->
 
               </div><!-- .columns.medium-7 -->
 
               <div class="columns medium-3 text-center">
 
-                <!-- <a href="#" class="button-rog">View Details</a> -->
+                <a href="http://www.asus.com/us/Notebooks_Ultrabooks/ASUS_ROG_G750JS/" class="button-rog external">View Details</a>
 
               </div><!-- .columns.medium-3 -->
 
@@ -127,8 +140,13 @@
 
                 <ul class="list-inline">
                   <li><strong>US:</strong></li>
-                  <li><a href="www.amazon.com/B00IEV85OU" target="_blank" class="external">Amazon</a></li>
+                  <li><a href="http://www.amazon.com/dp/B00IEV85OU" target="_blank" class="external">Amazon</a></li>
+                  <li><a href="http://www.bhphotovideo.com/c/search?ntt=asus+g750+js&refineSearchString=&ci=6782&N=4110474287" class="external">B&amp;H</a></li>
+                  <li><a href="http://www.gentechpc.com/showpages.asp?pid=1360" target="_blank" class="external">Gentech PC</a></li>
+                  <li><a href="http://www.mobileadvance.com/dp/B00IEV85OU" class="external">Mobile Advance</a></li>
                   <li><a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16834231631" target="_blank" class="external">Newegg</a></li>
+                  <li><a href="http://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=8925428" class="external">Tiger Direct</a></li>
+                  <li><a href="http://www.xoticpc.com/asus-g750jsds71-p-6978.html" class="external">XOTICPC</a></li>
                 </ul>
 
               </div><!-- .columns.medium-9.last -->
@@ -152,14 +170,14 @@
               <div class="columns medium-9">
 
                 <ul class="list-series">
-                  <li>NVIDIA<sup>&reg;</sup> GeForce<sup>&reg;</sup> GTX 860M 4GB with Optimus Technology</li>
+                  <li>NVIDIA<sup>&reg;</sup> GeForce<sup>&reg;</sup> GTX 860M 2GB with Optimus Technology</li>
                 </ul><!-- .list-series -->
 
               </div><!-- .columns.medium-7 -->
 
               <div class="columns medium-3 text-center">
 
-                <!-- <a href="#" class="button-rog">View Details</a> -->
+                <a href="http://www.asus.com/us/Notebooks_Ultrabooks/ASUS_ROG_G750JM/" class="button-rog external">View Details</a>
 
               </div><!-- .columns.medium-3 -->
 
@@ -171,8 +189,13 @@
 
                 <ul class="list-inline">
                   <li><strong>US:</strong></li>
-                  <li><a href="www.amazon.com/B00IKF2H12" target="_blank" class="external">Amazon</a></li>
+                  <li><a href="http://www.amazon.com/dp/B00IKF2H12" target="_blank" class="external">Amazon</a></li>
+                  <li><a href="http://www.bhphotovideo.com/c/search?ntt=asus+g750+jm&refineSearchString=&ci=6782&N=4110474287&" class="external">B&amp;H</a></li>
+                  <li><a href="http://www.gentechpc.com/showpages.asp?pid=1359" target="_blank" class="external">Gentech PC</a></li>
+                  <li><a href="http://www.mobileadvance.com/dp/B00IKF2H12" class="external">Mobile Advance</a></li>
                   <li><a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16834231630" target="_blank" class="external">Newegg</a></li>
+                  <li><a href="http://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=8925427" class="external">Tiger Direct</a></li>
+                  <li><a href="http://www.xoticpc.com/asus-g750jmds71-p-6968.html" class="external">XOTICPC</a></li>
                 </ul>
 
               </div><!-- .columns.medium-9.last -->
@@ -186,27 +209,8 @@
       </section><!-- #G750 -->
 
     </div><!-- .container -->
+    
+    
+<!-- #include file="../menu.asp" -->
 
-    <nav>
-
-      <div class="container">
-
-        <a href="http://rog.asus.com/" class="logo" title="ASUS ROG"><img src="/assets/img/logo-asus-rog.jpg" alt="ASUS ROG"></a>
-
-        <ul class="pull-right list-inline vertical-center-block">
-
-          <li><span class="hide-for-small-only">ASUS recommends Windows 8</span></li>
-          <li><a href="#" class="menu-button">Menu</a></li>
-
-        </ul>
-
-      </div><!-- .container -->
-
-    </nav>
-
-  </body>
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="/assets/lib/framework/framework.0.6.0.js"></script>
-
-</html>
+<!-- #include file="../footer.asp" -->
