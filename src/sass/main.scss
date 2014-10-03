@@ -39,6 +39,10 @@ $subnav-range: (40.063em, 75em) !default;
 
 $subnav-dots-only: "#{$screen} and (min-width:#{lower-bound($subnav-range)}) and (max-width:#{upper-bound($subnav-range)})" !default;
 
+%uppercase {
+  text-transform: uppercase;
+}
+
 body {
   font-family: 'Ubuntu', sans-serif;
   background-color: #000;
@@ -116,7 +120,7 @@ nav {
       padding-left: rem-calc(30);
       color: $white !important;
       text-decoration: none;
-      text-transform: uppercase;
+      @extend %uppercase;
       &:hover {
         color: $rog-red !important;
         background-color: rgba(4,4,4,0.5);
@@ -295,7 +299,7 @@ footer {
   }
   .dedicated-callout {
     font-style: italic;
-    text-transform: uppercase;
+    @extend %uppercase;
   }
 }
 
@@ -432,7 +436,7 @@ footer {
   .heading {
     margin-top: 0;
     margin-bottom: 0;
-    text-transform: uppercase;
+    @extend %uppercase;
     border-bottom: none;
   }
   .box-copy {
@@ -597,7 +601,7 @@ footer {
 }
 
 .uppercase {
-  text-transform: uppercase;
+  @extend %uppercase;
 }
 
 a:link    { color: lighten($rog-red, 10%); }

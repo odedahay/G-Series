@@ -1054,6 +1054,13 @@ li {
   height: 100%;
 }
 
+.dropdown-menu .dropdown-item > .menu-item,
+#power .dedicated-callout,
+.red-box .heading,
+.uppercase {
+  text-transform: uppercase;
+}
+
 body {
   font-family: 'Ubuntu', sans-serif;
   background-color: #000;
@@ -1150,7 +1157,6 @@ nav .menu-button:hover {
   padding-left: 2.14286rem;
   color: white !important;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .dropdown-menu .dropdown-item > .menu-item:hover {
@@ -1380,7 +1386,6 @@ footer {
 
 #power .dedicated-callout {
   font-style: italic;
-  text-transform: uppercase;
 }
 
 #design .top-copy {
@@ -1553,7 +1558,6 @@ footer {
 .red-box .heading {
   margin-top: 0;
   margin-bottom: 0;
-  text-transform: uppercase;
   border-bottom: none;
 }
 
@@ -1686,6 +1690,19 @@ footer {
   }
 }
 
+.tc-content-parent > .tc-copy {
+  min-height: 2.85714rem;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+@media only screen and (max-width: 40em) {
+  .tc-content-parent > .tc-copy {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
 .tc-nav-parent {
   max-width: 400px;
   margin-left: auto;
@@ -1752,10 +1769,6 @@ footer {
   .padding-bottom-medium-up {
     margin-bottom: 2em;
   }
-}
-
-.uppercase {
-  text-transform: uppercase;
 }
 
 a:link {
