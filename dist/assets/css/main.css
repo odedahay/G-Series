@@ -1057,6 +1057,7 @@ li {
 .red-box .heading,
 .uppercase,
 .dropdown-menu .dropdown-item > .menu-item,
+#home .pid-copy,
 #power .dedicated-callout {
   text-transform: uppercase;
 }
@@ -1641,14 +1642,14 @@ nav .menu-button:hover {
   }
 }
 
-#home .featured-supporting {
+#home .pid-copy {
   margin: 2.85714rem auto;
   max-width: 60%;
   font-weight: 400;
 }
 
 @media only screen and (max-width: 40em) {
-  #home .featured-supporting {
+  #home .pid-copy {
     margin-top: 1.42857rem;
     margin-bottom: 1.42857rem;
   }

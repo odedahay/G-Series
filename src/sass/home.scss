@@ -36,10 +36,11 @@
       height: floor(84px * 0.5);
     }
   }
-  .featured-supporting {
+  .pid-copy {
     margin: rem-calc(40) auto;
     max-width: 60%;
     font-weight: 400;
+    @extend %uppercase;
     @media #{$small-only} {
       margin-top: rem-calc(20);
       margin-bottom: rem-calc(20);
