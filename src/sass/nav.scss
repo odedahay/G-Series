@@ -1,0 +1,143 @@
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  border-bottom: 1px solid $gray;
+  > .container {
+    height: rem-calc(50);
+  }
+  .logo {
+    margin: 0;
+    float: left;
+    line-height: 1;
+    @include vertical-center-block();
+    > .rog {
+      border-left: 1px solid $gray;
+    }
+  }
+  .menu-button {
+    padding: 2px 5px;
+    border: 1px solid $silver;
+    border-radius: 3px;
+    color: $white !important;
+    text-decoration: none;
+    transition: border-color .3s ease-in-out;
+    &:hover {
+      border-color: $rog-red;
+    }
+  }
+}
+
+.dropdown-menu {
+  position:absolute;
+  top: rem-calc(51);
+  right: 0;
+  width: rem-calc(300);
+  background: url('../img/dropdown-menu-bg.jpg') center center no-repeat #272727;
+  background-size: 80%;
+  @media #{$small-only} {
+    width: 100%;
+    background-size: 100%;
+  }
+  .dropdown-list {
+    margin: 0;
+  }
+  .dropdown-item {
+    display: block;
+    line-height: 46px;
+    border-top: 1px solid darken($gray, 35%);
+    border-bottom: 1px solid darken($gray, 65%);
+    > .menu-item {
+      display: block;
+      padding-left: rem-calc(30);
+      color: $white !important;
+      text-decoration: none;
+      @extend %uppercase;
+      &:hover {
+        color: $rog-red !important;
+        background-color: rgba(4,4,4,0.5);
+      }
+      > .arrow {
+        font-size: 130%;
+        padding-right: rem-calc(10);
+      }
+    }
+  }
+}
+
+.subnav {
+  position: absolute;
+  right: rem-calc(20);
+  z-index: 10;
+  .subnav-button {
+    height: $subnav-button-height;
+    width: $subnav-button-width;
+    background: url('../img/fp-nav-bg-sprite-new.jpg') 0 0 no-repeat;
+    background-size: 468px 48px;
+    &.design {
+      background-position: -$subnav-button-width 0;
+    }
+    &.power {
+      background-position: (-$subnav-button-width * 2) 0;
+    }
+    &.cooling {
+      background-position: (-$subnav-button-width * 3) 0;
+    }
+    &.gaming {
+      background-position: (-$subnav-button-width * 4) 0;
+    }
+    &.series {
+      background-position: (-$subnav-button-width * 5) 0;
+    }
+    > .fp-nav {
+      position: relative;
+      display: block;
+      height: 100%;
+      @include text-hide();
+      > .bullet {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: -15px;
+        height: 12px;
+        width: 12px;
+        margin-top: -6px;
+        background: url('../img/fp-nav-bullet-sprite.jpg') -12px 0 no-repeat;
+      }
+      &.active > .bullet {
+        background-position: 0 0;
+      }
+    }
+  }
+  @media only screen and (max-width: 85em) {
+    .subnav-button {
+      width: 12px;
+      margin-bottom: rem-calc(10);
+      background-image: none;
+    }
+  }
+  @media only screen and (max-width: 75em) {
+    display: none !important;
+  }
+}
+
+.previous-section {
+  display: none !important;
+  @media #{$subnav-dots-only} {
+    display: block !important;
+  }
+}
+
+.next-section,
+.previous-section {
+  margin: rem-calc(30) auto;
+  width: 46px;
+}
+.next-section {
+  margin-top: rem-calc(15);
+}
+.previous-section {
+  margin-bottom: rem-calc(15);
+}

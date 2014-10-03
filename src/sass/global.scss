@@ -1,0 +1,205 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #000;
+  color: $silver;
+  > .container {
+    padding-top: rem-calc(50);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $white;
+}
+
+a:link    { color: lighten($rog-red, 10%); }
+a:visited { color: darken($rog-red, 5%); }
+a:hover   { color: $rog-red; }
+a:active  { color: darken($rog-red, 20%); }
+
+.container {
+  position: relative;
+}
+
+footer {
+  margin: 0 auto;
+  max-width: rem-calc(900);
+}
+
+.terms {
+  padding-right: rem-calc(10);
+  padding-left: rem-calc(10);
+  font-size: 70%;
+  color: darken($gray, 20%);
+  text-align: center;
+}
+
+.red-box {
+  margin-bottom: rem-calc(10);
+  padding: rem-calc(5) rem-calc(8);
+  height: 100%;
+  border: 1px solid $rog-red;
+  background: url('../img/box-bg.jpg') 0 0;
+  text-align: left;
+  .heading {
+    margin-top: 0;
+    margin-bottom: 0;
+    @extend %uppercase;
+    border-bottom: none;
+  }
+  .box-copy {
+    margin-top: rem-calc(5);
+    padding-left: rem-calc(25);
+    background: url('../img/bullet-red-box.png') 0 rem-calc(5) no-repeat;
+  }
+  > .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.wtb-box {
+  padding: rem-calc(5) rem-calc(8);
+  border: 1px solid $rog-red;
+  border-top: none;
+  .list-inline {
+    margin-top: 0.5em;
+  }
+}
+
+.series-box {
+  margin-bottom: rem-calc(10) !important;
+  &.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    @media #{$small-only} {
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+    }
+  }  
+  .series-label {
+    margin-top: 0;
+    margin-right: rem-calc(-16);
+    padding-top: rem-calc(18);
+    padding-bottom: rem-calc(18);
+    background-color: $rog-red;
+    color: $white;
+    text-align: center;
+    @media #{$small-only} {
+      margin-bottom: -1px;
+      margin-left: rem-calc(-7.5);
+      margin-right: rem-calc(-7.5);
+      padding-top: rem-calc(10);
+      padding-bottom: rem-calc(10);
+    }
+  }
+  .red-box {
+    padding-top: rem-calc(18);
+    padding-bottom: rem-calc(18);
+  }
+}
+
+.list-series {
+  padding-left: rem-calc(5);
+  > .series-item {
+    margin-bottom: rem-calc(10);
+    padding-left: rem-calc(25);
+    list-style: none;
+    background: url('../img/bullet-series.jpg') 0 4px no-repeat;
+  }
+}
+
+.screen-size {
+  float: left;
+  border-bottom: 1px solid $rog-red;
+}
+
+.kv {
+  max-height: 50%;
+  max-height: 50vh;
+}
+
+.featured-supporting {
+  max-width: 75%;
+  @media #{$small-only} {
+    max-width: 100% !important;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+    text-align: center !important;
+  }
+}
+
+@media #{$small-only} {
+  .fp-content-parent {    
+    margin-top: rem-calc(30);
+    padding-top: rem-calc(10);
+    background: url('../img/bg-section-mobile-only.jpg') top center no-repeat;
+    &:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      background-image: none;
+    }
+  }
+}
+
+.video-button {
+  display: block;
+  margin: rem-calc(10) auto;
+  height: 70px;
+  width: 117px;
+  @include text-hide();
+  &.overview {
+    background: url('../img/video-button-overview.jpg') 0 0 no-repeat;
+  }
+  &.series {
+    background: url('../img/video-button-series.jpg') 0 0 no-repeat;
+  }
+  &:hover {
+    background-position: 0 -70px;
+  }
+  @media #{$small-only} {
+    margin-top: rem-calc(20);
+    margin-bottom: rem-calc(20);
+  }
+}
+
+@include create-button('button-rog',$rog-red);
+
+@media #{$medium-up} {
+  .padding-bottom-medium-up {
+    margin-bottom: 2em;
+  }
+}
+
+.uppercase {
+  @extend %uppercase;
+}
+
+.social {
+  width: rem-calc(270);
+  margin: rem-calc(20) auto;
+  text-align: center;
+  .social-button {
+    display: block;
+    height: $social-button-height;
+    width: $social-button-width;
+    background: url('../img/social-bg-2x.jpg') 0 0 no-repeat;
+    background-size: 205px 32px;
+    @include text-hide();
+    &.twitter {
+      background-position: -$social-button-width 0;
+    }
+    &.youtube {
+      background-position: (-$social-button-width * 2) 0;
+    }
+    &.instagram {
+      background-position: (-$social-button-width * 3) 0;
+    }
+    &.google-plus {
+      background-position: (-$social-button-width * 4) 0;
+    }
+  }
+}

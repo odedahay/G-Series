@@ -1,0 +1,59 @@
+.tc-nav {
+  display: inline-block;
+  height: $tc-nav-gaming-height;
+  width: $tc-nav-gaming-width;
+  background: url('../img/tc-nav-sprite-gaming-2x.jpg') 0 0 no-repeat;
+  background-size: 360px 90px;
+  @include text-hide();
+  &.gaming-4k.active {
+    background-position: 0 bottom;
+  }
+  &.gaming-surround {
+    background-position: -$tc-nav-gaming-width 0;
+    &.active {
+      background-position: -$tc-nav-gaming-width bottom;
+    }
+  }
+  &.gaming-headphones {
+    background-position: (-$tc-nav-gaming-width * 2) 0;
+    &.active {
+      background-position: (-$tc-nav-gaming-width * 2) bottom;
+    }
+  }
+  &.gaming-audio {
+    background-position: (-$tc-nav-gaming-width * 3) 0;
+    &.active {
+      background-position: (-$tc-nav-gaming-width * 3) bottom;
+    }
+  }
+  &.gaming-sub {
+    background-position: (-$tc-nav-gaming-width * 4) 0;
+    &.active {
+      background-position: (-$tc-nav-gaming-width * 4) bottom;
+    }
+  }
+  &.gaming-wireless {
+    background-position: (-$tc-nav-gaming-width * 5) 0;
+    &.active {
+      background-position: (-$tc-nav-gaming-width * 5) bottom;
+    }
+  }
+}
+
+.tc-content-parent {
+  > .tc-copy {
+    min-height: rem-calc(40);
+    margin-left: 15%;
+    margin-right: 15%;
+    @media #{$small-only} {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  }
+}
+
+.tc-nav-parent {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}

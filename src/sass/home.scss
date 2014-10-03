@@ -1,0 +1,149 @@
+#home {
+  text-align: center;
+  .kv-home {
+    position: relative;
+    padding-bottom: rem-calc(10);
+    @media #{$small-only} {
+      padding-bottom: rem-calc(20);
+    }
+    .intel {
+      position: absolute;
+      bottom: 0;
+      right: 50%;
+      margin-right: rem-calc(-370);
+      @media #{$medium-down} {
+        right: rem-calc(70);
+        margin-right: 0;
+      }
+      > .logo {
+        position: absolute;
+        top: rem-calc(-45);
+        right: rem-calc(-60);
+        max-width: rem-calc(45);
+      }
+    }
+  }
+  .pid {
+    margin-top: rem-calc(20);
+    margin-left: auto;
+    margin-right: auto;
+    width: 570px;
+    height: 84px;
+    background: url('../img/pid-g-series.jpg') 0 0 no-repeat;
+    background-size: cover;
+    @media #{$small-only} {
+      width: floor(570px * 0.5);
+      height: floor(84px * 0.5);
+    }
+  }
+  .featured-supporting {
+    margin: rem-calc(40) auto;
+    max-width: 60%;
+    font-weight: 400;
+    @media #{$small-only} {
+      margin-top: rem-calc(20);
+      margin-bottom: rem-calc(20);
+    }
+  }
+  .button {
+    margin-bottom: rem-calc(30);
+  }
+}
+
+#power {
+  .kv-container {
+    position: relative;
+    text-align: right;
+    .kv {
+      @media #{$medium-up} {
+        min-height: rem-calc(335);
+      }
+    }
+    .nvidia-badge {
+      position: absolute;
+      bottom: 0;
+      right: rem-calc(20);
+      max-width: 167px;
+      @media #{$medium-only} {
+        right: 0;
+      }
+      @media #{$small-only} {
+        left: 5%;
+        bottom: 30%;
+        right: auto;
+        max-width: 120px;
+      }
+    }
+  }
+  .featured-supporting {
+    position: absolute;
+    z-index: 2;
+    max-width: 40%;
+    @media #{$medium-only} {
+      max-width: 50%;
+      padding: rem-calc(5);
+      background-color: rgba(1,1,1,0.3);
+    }
+    @media #{$small-only} {
+      position: relative;
+    }
+    .turbo-master {
+      @media #{$large-up} {
+        margin-top: rem-calc(40);
+      }
+    }
+  }
+  .dedicated-callout {
+    font-style: italic;
+    @extend %uppercase;
+  }
+}
+
+#design {
+  .top-copy {
+    margin-top: rem-calc(85);
+    @media #{$medium-up} {
+      margin-right: rem-calc(-100);
+    }
+    @media #{$small-only} {
+      margin-top: 0;
+    }
+  }
+  .bottom-kv {
+    margin-top: rem-calc(-50);
+    @media #{$medium-down} {
+      margin-top: rem-calc(20);
+    }
+  }
+  .bottom-copy {
+    margin-top: rem-calc(100);
+    @media #{$small-only} {
+      margin-top: 0;
+    }
+  }
+}
+
+#cooling {
+  .featured-supporting {
+    margin-bottom: rem-calc(40);
+    @media #{$small-only} {
+      margin-bottom: rem-calc(20);
+    }
+  }
+  @media #{$medium-up} {
+    .heat-pipes {
+      margin-top: rem-calc(20);
+      margin-bottom: rem-calc(20);
+    }
+  }
+}
+
+#series {
+  .featured-supporting {
+    text-align: left;
+  }
+  .series-button {
+    margin-top: rem-calc(50);
+    margin-bottom: rem-calc(50);
+  }
+}

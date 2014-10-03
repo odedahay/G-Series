@@ -1,0 +1,20 @@
+$subnav-button-width: 78px !default;
+$subnav-button-height: 48px !default;
+
+$tc-nav-gaming-width: 60px !default;
+$tc-nav-gaming-height: 45px !default;
+
+$social-button-width: 41px !default;
+$social-button-height: 32px !default;
+
+$rog-red: #940c0c !default;
+
+$silver: #e5e5e5; 
+
+$subnav-range: (40.063em, 75em) !default;
+
+$subnav-dots-only: "#{$screen} and (min-width:#{lower-bound($subnav-range)}) and (max-width:#{upper-bound($subnav-range)})" !default;
+
+%uppercase {
+  text-transform: uppercase;
+}
