@@ -111,7 +111,7 @@ nav {
     line-height: 46px;
     border-top: 1px solid darken($gray, 35%);
     border-bottom: 1px solid darken($gray, 65%);
-    > a {
+    > .menu-item {
       display: block;
       padding-left: rem-calc(30);
       color: $white !important;
@@ -132,13 +132,14 @@ nav {
 footer {
   margin: 0 auto;
   max-width: rem-calc(900);
-  p {
-    padding-right: rem-calc(10);
-    padding-left: rem-calc(10);
-    font-size: 70%;
-    color: darken($gray, 20%);
-    text-align: center;
-  }
+}
+
+.terms {
+  padding-right: rem-calc(10);
+  padding-left: rem-calc(10);
+  font-size: 70%;
+  color: darken($gray, 20%);
+  text-align: center;
 }
 
 .subnav {
@@ -214,7 +215,7 @@ footer {
         right: rem-calc(70);
         margin-right: 0;
       }
-      > img {
+      > .logo {
         position: absolute;
         top: rem-calc(-45);
         right: rem-calc(-60);
@@ -238,7 +239,6 @@ footer {
   .featured-supporting {
     margin: rem-calc(40) auto;
     max-width: 60%;
-    text-transform: uppercase;
     font-weight: 400;
     @media #{$small-only} {
       margin-top: rem-calc(20);
@@ -288,9 +288,6 @@ footer {
       position: relative;
     }
     .turbo-master {
-      > h4 {
-        text-transform: uppercase;
-      }
       @media #{$large-up} {
         margin-top: rem-calc(40);
       }
@@ -393,9 +390,6 @@ footer {
     margin-top: rem-calc(50);
     margin-bottom: rem-calc(50);
   }
-  > h3 {
-    text-transform: uppercase;
-  }
 }
 
 .social {
@@ -435,12 +429,13 @@ footer {
   border: 1px solid $rog-red;
   background: url('../img/box-bg.jpg') 0 0;
   text-align: left;
-  h4 {
+  .heading {
     margin-top: 0;
     margin-bottom: 0;
     text-transform: uppercase;
+    border-bottom: none;
   }
-  p {
+  .box-copy {
     margin-top: rem-calc(5);
     padding-left: rem-calc(25);
     background: url('../img/bullet-red-box.png') 0 rem-calc(5) no-repeat;
@@ -455,7 +450,7 @@ footer {
   padding: rem-calc(5) rem-calc(8);
   border: 1px solid $rog-red;
   border-top: none;
-  ul {
+  .list-inline {
     margin-top: 0.5em;
   }
 }
@@ -494,14 +489,11 @@ footer {
 
 .list-series {
   padding-left: rem-calc(5);
-  > li {
+  > .series-item {
     margin-bottom: rem-calc(10);
     padding-left: rem-calc(25);
     list-style: none;
     background: url('../img/bullet-series.jpg') 0 4px no-repeat;
-    &.wtb-links {
-      background-image: none;
-    }
   }
 }
 
@@ -536,9 +528,6 @@ footer {
 
 .featured-supporting {
   max-width: 75%;
-  > h1 {
-    text-transform: uppercase;
-  }
   @media #{$small-only} {
     max-width: 100% !important;
     padding-left: 5% !important;
@@ -561,10 +550,7 @@ footer {
 }
 
 .tc-content-parent {
-  > h4 {
-    text-transform: uppercase;
-  }
-  > p {
+  > .tc-copy {
     min-height: rem-calc(40);
     margin-left: 15%;
     margin-right: 15%;
@@ -608,6 +594,10 @@ footer {
   .padding-bottom-medium-up {
     margin-bottom: 2em;
   }
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 a:link    { color: lighten($rog-red, 10%); }
