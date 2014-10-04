@@ -893,16 +893,16 @@ li {
     clear: both;
   }
 
-  .medium-block-grid-6 > li {
-    width: 16.66667%;
+  .medium-block-grid-5 > li {
+    width: 20%;
     list-style: none;
   }
 
-  .medium-block-grid-6 > li:nth-of-type(n) {
+  .medium-block-grid-5 > li:nth-of-type(n) {
     clear: none;
   }
 
-  .medium-block-grid-6 > li:nth-of-type(6n+1) {
+  .medium-block-grid-5 > li:nth-of-type(5n+1) {
     clear: both;
   }
 }
@@ -1586,10 +1586,6 @@ nav .menu-button:hover {
 
 .tc-nav.gaming-sub.active {
   background-position: -240px bottom;
-}
-
-.tc-nav.gaming-wireless {
-  background-position: -300px 0;
 }
 
 .tc-nav.gaming-wireless.active {
