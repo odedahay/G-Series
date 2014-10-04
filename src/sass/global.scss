@@ -13,6 +13,7 @@ h3,
 h4,
 h5 {
   color: $white;
+  @extend %uppercase;
 }
 
 a:link    { color: lighten($rog-red, 10%); }
@@ -47,7 +48,6 @@ footer {
   .heading {
     margin-top: 0;
     margin-bottom: 0;
-    @extend %uppercase;
     border-bottom: none;
   }
   .box-copy {

@@ -1080,7 +1080,10 @@ li {
   height: 100%;
 }
 
-.red-box .heading,
+h1,
+h2,
+h3,
+h4,
 .uppercase,
 .dropdown-menu .dropdown-item > .menu-item,
 #home .pid-copy,
