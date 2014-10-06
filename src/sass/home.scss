@@ -28,12 +28,12 @@
     margin-left: auto;
     margin-right: auto;
     width: 570px;
-    height: 84px;
-    background: url('../img/pid-g-series.jpg') 0 0 no-repeat;
+    height: 86px;
+    background: url('../img/g-series-pid-G751.png') 0 0 no-repeat;
     background-size: cover;
     @media #{$small-only} {
-      width: floor(570px * 0.5);
-      height: floor(84px * 0.5);
+      width: floor(570px * 0.7);
+      height: floor(86px * 0.7);
     }
   }
   .pid-copy {
@@ -42,6 +42,7 @@
     font-weight: 400;
     @extend %uppercase;
     @media #{$small-only} {
+      max-width: 80%;
       margin-top: rem-calc(20);
       margin-bottom: rem-calc(20);
     }

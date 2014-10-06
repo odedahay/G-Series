@@ -1632,15 +1632,15 @@ nav .menu-button:hover {
   margin-left: auto;
   margin-right: auto;
   width: 570px;
-  height: 84px;
-  background: url("../img/pid-g-series.jpg") 0 0 no-repeat;
+  height: 86px;
+  background: url("../img/g-series-pid-G751.png") 0 0 no-repeat;
   background-size: cover;
 }
 
 @media only screen and (max-width: 40em) {
   #home .pid {
-    width: 285px;
-    height: 42px;
+    width: 399px;
+    height: 60px;
   }
 }
 
@@ -1652,6 +1652,7 @@ nav .menu-button:hover {
 
 @media only screen and (max-width: 40em) {
   #home .pid-copy {
+    max-width: 80%;
     margin-top: 1.42857rem;
     margin-bottom: 1.42857rem;
   }
