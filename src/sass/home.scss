@@ -158,5 +158,9 @@
   .series-button {
     margin-top: rem-calc(50);
     margin-bottom: rem-calc(50);
+    @media #{$small-only} {
+      margin-top: rem-calc(10);
+      margin-bottom: rem-calc(10);
+    }
   }
 }
