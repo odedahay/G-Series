@@ -74,22 +74,25 @@ nav {
   .subnav-button {
     height: $subnav-button-height;
     width: $subnav-button-width;
-    background: url('../img/fp-nav-bg-sprite-new.jpg') 0 0 no-repeat;
-    background-size: 468px 48px;
+    background: url('../img/fp-nav-bg-sprite-v3.jpg') 0 0 no-repeat;
+    background-size: 546px 48px;
     &.design {
       background-position: -$subnav-button-width 0;
     }
-    &.power {
+    &.G751 {
       background-position: (-$subnav-button-width * 2) 0;
     }
-    &.cooling {
+    &.power {
       background-position: (-$subnav-button-width * 3) 0;
     }
-    &.gaming {
+    &.cooling {
       background-position: (-$subnav-button-width * 4) 0;
     }
-    &.series {
+    &.gaming {
       background-position: (-$subnav-button-width * 5) 0;
+    }
+    &.series {
+      background-position: (-$subnav-button-width * 6) 0;
     }
     > .fp-nav {
       position: relative;

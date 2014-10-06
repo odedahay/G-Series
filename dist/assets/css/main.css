@@ -1406,28 +1406,32 @@ nav .menu-button:hover {
 .subnav .subnav-button {
   height: 48px;
   width: 78px;
-  background: url("../img/fp-nav-bg-sprite-new.jpg") 0 0 no-repeat;
-  background-size: 468px 48px;
+  background: url("../img/fp-nav-bg-sprite-v3.jpg") 0 0 no-repeat;
+  background-size: 546px 48px;
 }
 
 .subnav .subnav-button.design {
   background-position: -78px 0;
 }
 
-.subnav .subnav-button.power {
+.subnav .subnav-button.G751 {
   background-position: -156px 0;
 }
 
-.subnav .subnav-button.cooling {
+.subnav .subnav-button.power {
   background-position: -234px 0;
 }
 
-.subnav .subnav-button.gaming {
+.subnav .subnav-button.cooling {
   background-position: -312px 0;
 }
 
-.subnav .subnav-button.series {
+.subnav .subnav-button.gaming {
   background-position: -390px 0;
+}
+
+.subnav .subnav-button.series {
+  background-position: -468px 0;
 }
 
 .subnav .subnav-button > .fp-nav {
