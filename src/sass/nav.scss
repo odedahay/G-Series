@@ -95,7 +95,7 @@ nav {
       position: relative;
       display: block;
       height: 100%;
-      @include text-hide();
+      @extend %text-hide;
       > .bullet {
         display: block;
         position: absolute;

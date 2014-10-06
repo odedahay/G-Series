@@ -4,7 +4,7 @@
   width: $tc-nav-gaming-width;
   background: url('../img/tc-nav-sprite-gaming-2x.jpg') 0 0 no-repeat;
   background-size: 360px 90px;
-  @include text-hide();
+  @extend %text-hide;
   &.gaming-4k.active {
     background-position: 0 bottom;
   }

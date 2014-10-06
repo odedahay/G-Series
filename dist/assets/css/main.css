@@ -349,7 +349,11 @@ input::-moz-focus-inner {
   transform: translate(-50%, -50%);
 }
 
-.text-hide {
+.text-hide,
+.video-button,
+.social .social-button,
+.subnav .subnav-button > .fp-nav,
+.tc-nav {
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
@@ -1084,7 +1088,6 @@ h1,
 h2,
 h3,
 h4,
-.uppercase,
 .dropdown-menu .dropdown-item > .menu-item,
 #home .pid-copy,
 #power .dedicated-callout {
@@ -1266,11 +1269,6 @@ footer {
   margin: 0.71429rem auto;
   height: 70px;
   width: 117px;
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
 }
 
 .video-button.overview {
@@ -1335,11 +1333,6 @@ footer {
   width: 41px;
   background: url("../img/social-bg-2x.jpg") 0 0 no-repeat;
   background-size: 205px 32px;
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
 }
 
 .social .social-button.twitter {
@@ -1482,11 +1475,6 @@ nav .menu-button:hover {
   position: relative;
   display: block;
   height: 100%;
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
 }
 
 .subnav .subnav-button > .fp-nav > .bullet {
@@ -1548,11 +1536,6 @@ nav .menu-button:hover {
   width: 60px;
   background: url("../img/tc-nav-sprite-gaming-2x.jpg") 0 0 no-repeat;
   background-size: 360px 90px;
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
 }
 
 .tc-nav.gaming-4k.active {
