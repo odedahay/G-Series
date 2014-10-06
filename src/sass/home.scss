@@ -51,6 +51,18 @@
   }
 }
 
+@media #{$medium-up} {
+  #G751 {
+    .featured-supporting {
+      position: absolute;
+      z-index: 2;
+    }
+    .tc-content-parent {
+      margin-top: rem-calc(20);
+    }
+  }
+}
+
 #power {
   .kv-container {
     position: relative;

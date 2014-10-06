@@ -843,19 +843,6 @@ li {
 }
 
 @media only screen {
-  .small-block-grid-2 > li {
-    width: 50%;
-    list-style: none;
-  }
-
-  .small-block-grid-2 > li:nth-of-type(n) {
-    clear: none;
-  }
-
-  .small-block-grid-2 > li:nth-of-type(2n+1) {
-    clear: both;
-  }
-
   .small-block-grid-3 > li {
     width: 33.33333%;
     list-style: none;
@@ -866,6 +853,19 @@ li {
   }
 
   .small-block-grid-3 > li:nth-of-type(3n+1) {
+    clear: both;
+  }
+
+  .small-block-grid-4 > li {
+    width: 25%;
+    list-style: none;
+  }
+
+  .small-block-grid-4 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  .small-block-grid-4 > li:nth-of-type(4n+1) {
     clear: both;
   }
 
@@ -884,19 +884,6 @@ li {
 }
 
 @media only screen and (min-width: 40.063em) {
-  .medium-block-grid-4 > li {
-    width: 25%;
-    list-style: none;
-  }
-
-  .medium-block-grid-4 > li:nth-of-type(n) {
-    clear: none;
-  }
-
-  .medium-block-grid-4 > li:nth-of-type(4n+1) {
-    clear: both;
-  }
-
   .medium-block-grid-5 > li {
     width: 20%;
     list-style: none;
@@ -1534,19 +1521,19 @@ nav .menu-button:hover {
   display: inline-block;
   height: 45px;
   width: 60px;
-  background: url("../img/tc-nav-sprite-gaming-2x.jpg") 0 0 no-repeat;
-  background-size: 360px 90px;
+  background: url("../img/tc-nav-sprite-v3.jpg") 0 0 no-repeat;
+  background-size: 540px 90px;
 }
 
 .tc-nav.gaming-4k.active {
   background-position: 0 bottom;
 }
 
-.tc-nav.gaming-surround {
+.tc-nav.gaming-trinity {
   background-position: -60px 0;
 }
 
-.tc-nav.gaming-surround.active {
+.tc-nav.gaming-trinity.active {
   background-position: -60px bottom;
 }
 
@@ -1574,8 +1561,36 @@ nav .menu-button:hover {
   background-position: -240px bottom;
 }
 
-.tc-nav.gaming-wireless.active {
+.tc-nav.G751-rog-key {
+  background-position: -300px 0;
+}
+
+.tc-nav.G751-rog-key.active {
   background-position: -300px bottom;
+}
+
+.tc-nav.G751-system-info {
+  background-position: -360px 0;
+}
+
+.tc-nav.G751-system-info.active {
+  background-position: -360px bottom;
+}
+
+.tc-nav.G751-profile {
+  background-position: -420px 0;
+}
+
+.tc-nav.G751-profile.active {
+  background-position: -420px bottom;
+}
+
+.tc-nav.G751-macros {
+  background-position: -480px 0;
+}
+
+.tc-nav.G751-macros.active {
+  background-position: -480px bottom;
 }
 
 .tc-copy {
@@ -1596,6 +1611,12 @@ nav .menu-button:hover {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+@media only screen and (max-width: 40em) {
+  .tc-nav-parent {
+    max-width: 100%;
+  }
 }
 
 #home {
@@ -1666,6 +1687,17 @@ nav .menu-button:hover {
 
 #home .button {
   margin-bottom: 2.14286rem;
+}
+
+@media only screen and (min-width: 40.063em) {
+  #G751 .featured-supporting {
+    position: absolute;
+    z-index: 2;
+  }
+
+  #G751 .tc-content-parent {
+    margin-top: 1.42857rem;
+  }
 }
 
 #power .kv-container {

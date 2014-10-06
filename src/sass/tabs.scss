@@ -2,13 +2,13 @@
   display: inline-block;
   height: $tc-nav-gaming-height;
   width: $tc-nav-gaming-width;
-  background: url('../img/tc-nav-sprite-gaming-2x.jpg') 0 0 no-repeat;
-  background-size: 360px 90px;
+  background: url('../img/tc-nav-sprite-v3.jpg') 0 0 no-repeat;
+  background-size: 540px 90px;
   @extend %text-hide;
   &.gaming-4k.active {
     background-position: 0 bottom;
   }
-  &.gaming-surround {
+  &.gaming-trinity {
     background-position: -$tc-nav-gaming-width 0;
     &.active {
       background-position: -$tc-nav-gaming-width bottom;
@@ -32,10 +32,28 @@
       background-position: (-$tc-nav-gaming-width * 4) bottom;
     }
   }
-  &.gaming-wireless {
+  &.G751-rog-key {
     background-position: (-$tc-nav-gaming-width * 5) 0;
     &.active {
       background-position: (-$tc-nav-gaming-width * 5) bottom;
+    }
+  }
+  &.G751-system-info {
+    background-position: (-$tc-nav-gaming-width * 6) 0;
+    &.active {
+      background-position: (-$tc-nav-gaming-width * 6) bottom;
+    }
+  }
+  &.G751-profile {
+    background-position: (-$tc-nav-gaming-width * 7) 0;
+    &.active {
+      background-position: (-$tc-nav-gaming-width * 7) bottom;
+    }
+  }
+  &.G751-macros {
+    background-position: (-$tc-nav-gaming-width * 8) 0;
+    &.active {
+      background-position: (-$tc-nav-gaming-width * 8) bottom;
     }
   }
 }
@@ -55,4 +73,7 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  @media #{$small-only} {
+    max-width: 100%;
+  }
 }
