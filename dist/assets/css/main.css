@@ -1095,6 +1095,12 @@ footer {
   max-width: 64.28571rem;
 }
 
+.cta {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .terms {
   padding-right: 0.71429rem;
   padding-left: 0.71429rem;
@@ -1667,12 +1673,12 @@ nav .menu-button:hover {
 }
 
 @media only screen and (min-width: 40.063em) {
-  #G751 .featured-supporting {
+  #G751.fp-content-parent .featured-supporting {
     position: absolute;
     z-index: 2;
   }
 
-  #G751 .tc-content-parent {
+  #G751.fp-content-parent .tc-content-parent {
     margin-top: 1.42857rem;
   }
 }
