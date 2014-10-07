@@ -32,8 +32,10 @@
     background: url('../img/g-series-pid-G751.png') 0 0 no-repeat;
     background-size: cover;
     @media #{$small-only} {
+      max-width: 100%;
       width: floor(570px * 0.7);
       height: floor(86px * 0.7);
+      background-size: 100% auto;
     }
   }
   .pid-copy {

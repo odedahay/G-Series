@@ -1650,8 +1650,10 @@ nav .menu-button:hover {
 
 @media only screen and (max-width: 40em) {
   #home .pid {
+    max-width: 100%;
     width: 399px;
     height: 60px;
+    background-size: 100% auto;
   }
 }
 
